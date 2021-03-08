@@ -1,0 +1,131 @@
+﻿body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote {margin: 0;padding: 0;}
+body {color: #505050;font-family: 微软雅黑;font-size: 12px;font-weight: normal;line-height: 1.5em;width: 100%;background-color: #FFFFFF;}
+body{ padding-top:0px; -webkit-box-sizing: border-box; word-wrap: break-word;word-break: keep-all;}
+img{border:0px;}
+a{cursor: pointer;color: #FF6600;text-decoration:none;}
+a:hover{ color:#000000; text-decoration:underline;}
+input[type=submit]{ cursor:pointer}
+
+.login{ font-size:16px;}
+.login table{ height:200px;width: 500px;border-collapse: collapse;border: 1px solid #CECECE;margin:100px auto;}
+.login input[type=text]{  height: 22px;border: 1px solid #027CAD;width: 200px;line-height: 22px;}
+.login .title{background-color: #027CAD;color: #fff; height:40px; line-height:40px; font-size:20px;}
+.login table th{border: 1px solid #CECECE; font-size:12px;}
+.login table td{border: 1px solid #CECECE;}
+.login table tr{border: 1px solid #CECECE;}
+
+.part .select{ margin-bottom:1px; background-color: #FFF;padding:5px;  float:left; width:100%;-webkit-box-sizing: border-box; word-wrap: break-word;word-break: keep-all; }
+.part .title{text-indent: 20px; font-size:14px; font-weight:bold; border-bottom:1px solid #E6E6E6; color:#FF6600; height:30px; line-height:30px; width:99%; float:left; background-color:#DBE7F3; }
+.part .title1{ font-size:16px;}
+
+.dui{ font-weight:bold; color:#4DB84A;}
+.cuo{ font-weight:bold; color:#FF0000;}
+.btnTJ{border:0px;float:left; font-weight:bold; width:80px; height:22px; font-size:12px; text-align:center; color:#FFF; background-image:url(/imagesUser/btn2.png);}
+.btnAdd{ cursor:pointer; border:1px solid #027CAD; margin-left: 150px;border:0px;float:left; font-weight:bold; padding:0px 30px; height:25px; font-size:12px; text-align:center; color:#FFF; background-image:url(/imagesUser/btn2.png);}
+.btnSelect{padding-left: 10px; margin-right:10px; background-color: #FF6600;color: #FFF;padding-right: 10px;border:0px;height:20px; line-height:20px;font-weight:bold;font-size:12px; display:inline-block; cursor:pointer;}
+#btnZhongshi{padding-left: 10px; color:#505050; margin-right:10px; background-color: #0ff0F0;padding-right: 10px;border:0px;height:20px; line-height:20px;font-weight:bold;font-size:12px; display:inline-block; cursor:pointer;}
+.btnCjyd{padding-left: 10px; margin-right:10px; background-color: #FF0000;color: #FFF;padding-right: 10px;border:0px;height:20px; line-height:20px;font-weight:bold;font-size:12px; display:inline-block; cursor:pointer;}
+.btnAll{padding-left: 10px;background-color: #027CAD;color: #FFF;padding-right: 10px;border:0px;height:20px; line-height:20px;font-weight:bold;font-size:12px; display:inline-block; cursor:pointer;}
+.btnPiLiang{  cursor:pointer;color:#FF0000;line-height:26px; width:60px; height:26px; border:0px; font-weight:bold; text-align:center;margin-left:10px; display:inline-block;  background-image: url(../images/operaBtn.gif);}
+.btnList{  cursor:pointer;color:#FF0000; text-indent:0px; line-height:26px; width:60px; height:26px; border:0px; font-weight:bold; text-align:center;margin-left:10px; display:inline-block;  background-image: url(../images/operaBtn1.gif);}
+
+
+.info{height: 20px;margin-top: 0px;line-height: 20px; text-align:right;}
+.info a{ margin-right:30px; font-weight:bold; text-decoration:underline; color:#FF0000;}
+.path{height: 30px;border-bottom: 1px dashed #999; margin-top:5px; margin-bottom: 0px;line-height: 30px;}
+.link{height: 25px;margin-bottom: 5px;margin-top: 0px; margin-top:5px; line-height: 25px;}
+.status{height: 25px;margin-bottom: 5px;margin-top: 0px;line-height: 25px;}
+.status a{padding-left: 5px;background-color: #027CAD; color:#FFF; padding-right: 5px; float:right;}
+.status a.hover{background-color: #FF0000;}
+.select{margin-bottom: 5px;margin-top: 0px;line-height: 25px;}
+.link a{padding-left: 5px;background-color: #027CAD; margin-right:10px; color:#FFF; padding-right: 5px; float:right;}
+.link input{height: 25px; line-height:25px; border:0px; padding-left: 5px;background-color: #027CAD; margin-right:10px; color:#FFF; padding-right: 5px; float:right;}
+.content table{ width:99%; border-collapse: collapse; border:1px solid #CECECE;}
+.content table tr.hover{ background-color:#EFEFEF;}
+.content table th{border:1px solid #CECECE; background-color:#027CAD; height:30px; line-height:30px; font-size:12px; text-align:center; color:#FFF;}
+.content table td{border:1px solid #CECECE; height:25px; line-height:25px; text-align:center;}
+
+.selectPackage table{ width:99%; border-collapse: collapse; border:1px solid #CECECE;}
+.selectPackage table tr.hover{ background-color:#EFEFEF;}
+.selectPackage table th{border:1px solid #CECECE; background-color:#027CAD; height:30px; line-height:30px; font-size:12px; text-align:center; color:#FFF;}
+.selectPackage table td{border:1px solid #CECECE;font-size: 12px; height:25px; line-height:25px; text-align:center;}
+.selectPackage table td b{ color:#FF6600;}
+
+
+.money{ font-weight:bold; color:#FF0000;}
+.moneyEn{ font-weight:bold; color:#027CAD;}
+
+.add table{ width:99%; border-collapse: collapse; border:1px solid #CECECE;}
+.add table th{border:1px solid #CECECE; width:120px; height:30px; line-height:30px; text-align:center; color:#027CAD; font-size:12px;}
+.add table th span{ color:#FF0000;}
+.add table td{border:1px solid #CECECE; text-align:left; height:25px; line-height:25px; padding-left:20px;}
+.add table.detailTable td{ padding:0px;}
+.add input[type=text]{height: 22px;border: 1px solid #027CAD;width: 300px; text-indent:6px; line-height: 22px;}
+.add textarea{height: 60px;border: 1px solid #027CAD;width: 400px;line-height: 22px;}
+
+
+.page {font-size: 12px;height: 30px;float: right;margin: 20px auto 0px;overflow: hidden;text-align: center;}
+.page a{margin-left:2px; margin-right:2px; float: left;padding: 1px 6px;border: 1px solid #ccc;color: #474747;font-size: 12px;font-weight: normal;overflow: hidden;text-decoration: none;}
+.page span{border: 1px solid #024396;font-weight:Bold;color:#024396; margin-left:2px; margin-right:2px; float: left;font-family: Arial,Helvetica,sans-serif;font-size: 12px;overflow: hidden;padding: 1px 6px;text-decoration: none;text-align: center;}
+
+
+
+
+
+.part{ font-size:12px; width:100%; border:1px solid #E6E6E6; float:left;}
+.part .title span{ font-weight:bold; color:#FF0000;}
+.part .select{ margin-bottom:1px; background-color: #FFF;padding:5px;  float:left; width:100%;-webkit-box-sizing: border-box; word-wrap: break-word;word-break: keep-all; }
+.part .content{-webkit-box-sizing: border-box;word-wrap: break-word;word-break: keep-all; padding:5px; width:100%; float:left; background-color:#FFFFFF;}
+.part .add{ padding:5px;-webkit-box-sizing: border-box; word-wrap: break-word;word-break: keep-all; width:100%; float:left; background-color:#FFFFFF;}
+.part .selectOut{ font-size:16px; padding:5px; width:100%; float:left; background-color:#FFFFFF;-webkit-box-sizing: border-box; word-wrap: break-word;word-break: keep-all; }
+.part .selectType{font-size:14px; float:left; background-color:#FFF; padding:0px 22px 0px 22px; width:874px;}
+.part .selectType input[type=radio]{ margin-left:10px;}
+.sureBotton{ cursor:pointer; border:0px; margin-right:10px;  float:right;padding: 6px; color:#FFF; background-color: #FF0000;}
+.quxiaoBotton{ cursor:pointer; border:0px; margin-right:10px;  float:right;padding: 6px; color:#FFF; background-color: #293955;}
+.sureBottonLv{ cursor:pointer; margin-right:10px;  float:right;padding: 6px; color:#FFF; background-color: #027CAD;}
+.part .selectBtn{background-color:#FFF; float:left; padding:10px 0px 10px 0px; width:99%;}
+
+tr:hover{ background-color:#DBE7F3;}
+.btnJcyhm{padding-left: 5px;background-color: #FF6600;color: #FFF;padding-right: 5px;border:0px;height:20px; line-height:20px; margin-left:10px; font-size:12px; display:inline-block; cursor:pointer;}
+.yhxx{ margin-left:10px;}
+
+
+.winSelect{ font-size:12px; width:100%; float:left; border:1px solid #BDDFF8; }
+.winSelect .title{text-indent: 20px; border-bottom:1px solid #BDDFF8; color:#494544; height:28px; line-height:28px; width:100%; float:left;background-image: url(../images/operaPartTitleBg.gif);}
+.winSelect .content{ width:100%; float:left; background-color:#FFFFFF;}
+
+.winPart{ font-size:12px; width:100%; float:left; border:1px solid #BDDFF8; }
+.winPart .title{text-indent: 20px; border-bottom:1px solid #BDDFF8; color:#494544; height:28px; line-height:28px; width:100%; float:left;background-image: url(../images/operaPartTitleBg.gif);}
+
+.add table th span.detailAdd{background-color: #FF0000; color:#FFF; width:60px; cursor:pointer; height:30px; line-height:30px; text-align:center; float:right; margin-right:10px;}
+.add table th span.detailDel{background-color: #FF6600; color:#FFF; width:60px; cursor:pointer; height:30px; line-height:30px; text-align:center; float:right; margin-right:10px;}
+
+.deliverInsert{ cursor:pointer; color:#FF0000;width:60px; margin-left:10px;}
+.deliverSelect{ cursor:pointer; color:#FF0000;width:60px; margin-left:10px;}
+
+.receiverInsert{ cursor:pointer; color:#FF0000;width:60px; margin-left:10px;}
+.receiverSelect{ cursor:pointer; color:#FF0000;width:60px; margin-left:10px;}
+
+.add table td.title2{ font-size:14px; height:30px; line-height:30px; color:#FF0000; font-weight:bold;}
+.add table td.title1{ font-size:14px; height:30px; line-height:30px; color:#FF6600; font-weight:bold;}
+
+.BusinessType{ width:100%; float:left; line-height:30px;text-indent:1em; font-weight:bold;}
+.BusinessType b{color: #027CAD;  }
+.BusinessType a{font-size:14px;}
+
+.businessOut{ width:100%; float:left; font-size:16px; height:30px; line-height:30px;text-indent:1em; font-weight:bold;}
+.businessOut b{ color:#FF0000;}
+
+.moneyOut{ width:100%; float:left; font-size:16px; height:30px; line-height:30px; text-align:right; font-weight:bold;}
+.moneyOut .mm{ color:#FF0000;}
+.moneyOut .jf{ font-weight:bold; color:#FF0000;}
+.moneyOther{font-size: 12px; font-weight: normal;}
+
+.disable 
+    { 
+        border-style:none; 
+        border-width: thin; 
+        background-color:Transparent; 
+        color: #CCCCCC; 
+        cursor:wait; 
+    } 

@@ -1,0 +1,690 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+body {
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	font-size: 90%;
+	background: #fff;
+	min-width: 600px;    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+}
+
+a {
+	text-decoration:none;
+	color:#369;
+	border: 0;
+}
+a:hover {
+	color:blue;
+}
+h1, h2, h3 {
+	margin:.8em 0 .2em 0;
+	padding:0;
+}
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+img {
+	/* margin:10px 0 5px; */
+	border-style: none;
+}
+
+.ui-widget-content a {
+	color: #369;
+}
+
+span.button {
+	height:20px;
+	background:white;
+	display:inline-block;
+	margin-left:20px;
+	padding: 0 10px;
+	line-height: 20px;
+}
+#ads {margin-top:15px;text-align:center;}
+#ads a {display:inline-block;}
+#ads img {
+	display:block;
+	margin:0;
+}
+
+/* Header styles */
+#header {
+	clear:both;
+	float:left;
+	width:100%;
+}
+#header {
+	border-bottom:1px solid #000;
+}
+#header p,
+#header h1,
+#header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+}
+#header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+#header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:3px 10px;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+#header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+#header ul li a.active,
+#header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+#header ul li a span {
+	display:block;
+}
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	height:100%;
+	position:relative;
+	/* padding:0 0 1em 0; */
+	overflow: auto;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	height:100%;
+	background:#fff;		/* right column background colour */
+}
+.leftmenu .colleft {
+	background:#f4f4f4;	/* left column background colour */
+}
+.leftmenu .col1 {
+	padding: 0px;
+	border-left:1px solid #ccc;
+	left:-1px;
+	background:#eef7ff;
+	/*padding-left: 2em;*/
+}
+.leftmenu .col2 {
+	float:left;
+	width:180px;			/* left column content width (column width minus left and right padding) */
+	left:0px;			/* (right column left and right padding) plus (left column left padding) */
+	padding-left: 0 20px;
+	/* background: #ADD8E6; */
+	border-right: 1px solid #CCCCCC;
+	/* background:url('../../resource/images/navi-bg-01.png') repeat-x; */
+	/* background-size:1px 1000px; */ 
+}
+
+#school-home .leftmenu .col2{
+	border-right:0 none;
+}
+.ui-layout.resizer {
+	background:#eef7ff;
+}
+
+.navi-item {
+	margin-top:10px;
+	position:relative;
+	height:44px;
+}
+.navi-item  a {
+	white-space:nowrap;
+	line-height:48px;
+	display:block;
+	margin-left:12px;
+	position:absolute;
+}
+.navi-item  a  span {
+	color:white;
+	text-shadow:-2px -2px 5px #000;
+	position: absolute;
+  	bottom: 0;
+  	cursor: pointer;;
+}
+/*
+.navi-item:hover  a {
+	bottom: 1px;
+	left: 10px;
+}*/
+.dockIcon {
+	display:inline-block;
+	width:360px;
+	height:180px;
+	font-family:"Microsoft Yahei";
+	margin-left:40px;
+	margin-top:40px;
+	position:relative;
+	float: left;
+}
+.dockIcon img {
+	width:128px;
+	height:128px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.dockIcon h1 {
+	margin:0;
+	color:green;
+	font-size:24px;
+	font-weight:normal;
+}
+.dockIcon ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:0px 0 0 0;
+	padding:0;
+}
+.dockIcon ul li {
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-size:16px;
+	margin-top:5px;
+}
+
+/* page 2 */
+.dockIconVertical {
+	display:block;
+	width:400px;
+	float:left;
+	height:108px;
+	font-family:"Microsoft Yahei";
+	margin-top:40px;
+	position:relative;
+}
+.dockIconVertical  span {
+	display:block;
+	margin-left:120px;
+	position:relative;
+}
+.dockIconVertical img {
+	width:96px;
+	height:96px;
+	position:absolute;
+	margin-top: 16px;
+	left:0;
+	top:0;
+}
+.dockIconVertical h1 {
+	margin:0;
+	color:green;
+	font-size:24px;
+	font-weight:normal;
+}
+.dockIconVertical ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.dockIconVertical ul li {
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-size:16px;
+	white-space:normal;
+	margin-top:5px;
+	color:#369;
+}
+
+/* Footer styles */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+
+.error {color: red;}
+
+.success {color: green;}
+
+.loadingDialog .ui-dialog-titlebar {display:none}
+
+.loadingDialog div.loading {
+	background: url('../images/loading.gif') no-repeat;
+	height : 24px;
+	padding : 0px;
+	margin: 0 0 0 5px;
+}
+
+.loadingDialog .ui-dialog-content{
+	overflow : hidden !important;
+	padding : 0px;
+}
+
+.navigator {
+	background: url("../images/nav_bg.png") #D7EBF9 50% 50% repeat-x; 
+	border-bottom: 1px solid black; 
+	height: 30px; 
+	line-height: 20px;
+	white-space: nowrap;
+}
+
+.navigator div {
+	color:green;
+	font-size:24px;
+	padding:5px 20px;
+}
+
+.navigator div a {
+	color:green;
+	font-weight: bold;
+}
+
+.col1Content .loadingTips {
+	padding: 20px 10px 0 10px;
+}
+
+.col1Content {
+	display: inline-block;
+	overflow: auto;
+}
+
+.condition {
+	white-space: nowrap;
+}
+
+#conditionWrapper{
+	overflow:hidden;
+}
+.col1Content .condition, 
+.col1Content .result {
+	padding : 2px 5px 0 0;
+}
+
+.condition label, 
+.condition span {
+	display: inline-block;
+}
+
+.condition span{
+	margin: 0 20px 0 5px;
+}
+
+.leftBottom, 
+.treeContainer {
+	width: 230px;
+	overflow: auto;
+	padding: 10px 10px 0 10px;
+}
+
+.leftBottom {
+	border-top:1px solid #ccc;
+}
+
+.leftPanel {
+	float: left;
+	border-right:1px solid #ccc;
+}
+
+.treeContainer .jstree{
+	background-color: #EEF7FF !important;
+}
+
+.ui-widget {
+	font-size: 1em;
+}
+.home_header{
+	line-height:43px;
+	padding-left:10px;
+	font-weight:bold;
+	vertical-align:middle;
+	color:black;
+	background: #A5CBEF;
+}
+.customtip{
+	clear:both;
+	color:red;
+	font-size:12px;
+}
+.school-car-container,.school-instructors{
+   border-right: 1px solid #CCCCCC;
+   float: left;
+   overflow: auto;
+   padding: 10px 10px 0;
+   min-height: 420px;
+   width: 160px;
+   height: auto !important;
+   height: 420px;
+}
+.school-car-container{
+ width: 150px;
+}
+
+#leftsubscribes{
+   border-right: 1px solid #CCCCCC;
+   float: left;
+   overflow: auto;
+   padding: 10px 10px 0;
+   min-height: 450px;
+   width: 160px;
+   height: auto !important;
+   height: 450px;
+   width: 480px;
+}
+#rightsubscribes{
+   float: left;
+   overflow: auto;
+   padding: 10px 10px 0;
+   width: 280px;
+}
+
+#rightsubscribes .checkedlearners{
+   height: 450px;
+}
+.checkedlearners li{
+	border-bottom:1px dashed #CCC;
+	list-style:none;
+}
+#home_container .wrapper {
+	padding: 5px 0px 5px 10px;
+	color:white;
+	text-shadow:2px 2px 5px #777;
+	font-family:'Microsoft Yahei';
+	background: url('../images/header_bg.png') repeat-x;
+}
+
+#home_container .wrapper img {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	border: none;
+	float: left;
+}
+
+#home_container .wrapper div.textwrapper {
+	display:inline-block;
+	min-height:64px;
+	text-align:left;
+	margin-left:20px;
+	float: left;
+}
+
+#home_container .list_menu {
+	border-style: solid solid none solid;
+	border-color: #94AA74;
+	border-size: 1px;
+	border-width: 1px;
+}
+
+#home_container .list_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+	
+#home_container .list_menu li a{
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	background: transparent url('../images/menu_arrow.gif') 100% 0;
+  	height: 24px; /*Set to height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	padding: 4px 0 4px 10px;
+	line-height: 24px; /*Set line-height of bg image- padding within link (ie: 32px - 4px - 4px)*/
+	text-decoration: none;
+}
+
+#home_container .list_menu li a:hover{
+	color: #26370A;
+	background-position: 100% -32px;
+}
+
+	
+#home_container .list_menu li a.selected{
+	color: #000;
+	background-position: 100% -64px;
+}
+
+#home_container .content {
+    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    left: -1px;
+    padding: 0;
+}
+.subcondition1{
+	font-size:13px;
+}
+.isrequired{
+	color:red;
+}
+.school-datadownload ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	height:410px;
+	overflow:auto;
+}
+.school-datadownload li{
+	padding-top:5px;
+}
+.school-datadownload-condition{
+	font-size:13px;
+	padding-top:3px;
+}
+#school-content .dockIcon h1{
+	font-size:20px;
+}
+#school-home .dockIconVertical ul li{
+	cursor:pointer;
+}
+#school-home .navigator div{
+	font-size:15px;
+}
+#school-home .col1Content{
+	display:block;
+}
+#school-home .navigator div{
+	padding:5px;
+}
+#school-home .navigator div a{
+	color:#00AEEF;
+}
+#school-home .navigator div a:hover{
+	text-decoration:underline;
+}
+.condition .finder thead span{
+	margin-right:3px;
+}
+.finder {
+    border: 1px solid #DDDDDD;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+}
+.finder .finder-indicator {
+    background: none repeat scroll 0 0 #EEF7FF;
+    cursor: default;
+    left: 10px;
+    position: absolute;
+    height:16px;
+    line-height:16px;
+    top: -11px;
+}
+.finder input[type="text"] {border:0;padding-left:2px; background:none;width:100px;border-bottom:1px solid silver;}
+.finder td {
+    padding: 2px 10px;
+}
+.radius5{
+	border-radius: 5px 5px 5px 5px;
+    border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+}
+
+.radius3{
+	border-radius: 3px 3px 3px 3px;
+    border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+}
+#school-home .result{
+	margin-top:-15px;
+}
+#school-home table.gridTable{
+	border-collapse:collapse;
+}
+
+#school-home table.gridTable tbody td{
+	font-size:13px;
+}
+.audit-header td{
+	font-size:13px;
+}
+.finder .finder-indicator{
+	display:none;
+}
+.ie6 .ui-dialog-titlebar{
+	height:20px;
+}
+
+.ie6 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
+	background:none;
+}
+
+.fbutton{
+	padding: 10px 0;
+}
+
+.fbutton{
+	padding: 1px 0 3px 0;
+}
+
+.fbutton  input[type=button]{
+	padding: 2px 16px;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.fht-table-wrapper .fht-tbody thead th{
+	border-width: 0px !important;
+}
+
+.result {
+	height : 100%;
+}
+#naviaccordion h3{
+	font-size:15px;
+	font-weight:bold;
+}
+#naviaccordion div li{
+	height:25px;
+	padding:2px 5px;
+	font-size:13px;
+}
+#naviaccordion div li a{
+	font-size:14px;
+}
+#naviaccordion div li a:hover{
+	text-decoration:underline;
+}
+#naviaccordion ul {
+	list-style:none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#school-home .navigator{
+	background: url("jquery/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E6E6E6;
+    border: 1px solid #D3D3D3;
+    color: #555555;
+    font-weight: normal;
+}
+
+#school-home .leftmenu .col1{
+	background-color:#FFF;
+}
+#school-home .navigator div{
+	color:black;
+}
+
+.homebtns li img{
+}
+.topbadge{
+	background: url(../images/topbadge.jpg) no-repeat scroll 10px 0 #A5CBEF;
+    color: #000000;
+    font-weight: bold;
+    line-height: 43px;
+    padding-left: 10px;
+    vertical-align: middle
+}
+
+.home_navigator{
+	background: url("jquery/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E6E6E6;
+    border: 1px solid #D3D3D3;
+    color: #555555;
+    font-weight: bold;
+    font-size:16px;
+    padding: 5px 5px 5px 35px;
+}
+.finder .search_jx{
+	width:120px;
+}

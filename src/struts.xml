@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+	<package name="liu" extends="struts-default">
+		<global-results>
+			<result name="succeed">/common/succeed.jsp</result>
+			<result name="successAdd">/common/add_success.jsp</result>
+			<result name="successDel">/common/del_success.jsp</result>
+			<result name="successUpdate">/common/update_success.jsp</result>
+			<result name="msg">/common/msg.jsp</result>
+		</global-results>
+
+		<action name="upload" class="com.util.upload" method="upload">
+			<result name="success">/upload/upload_re.jsp</result>
+		</action>
+
+		<action name="chengjiAdd" class="chengjiAction"
+			method="chengjiAdd">
+		</action>
+		<action name="chengjiDel" class="chengjiAction"
+			method="chengjiDel">
+		</action>
+		<action name="chengjiMana" class="chengjiAction"
+			method="chengjiMana">
+			<result>/admin/chengji/chengjiMana.jsp</result>
+		</action>
+		<action name="chengjiMana1" class="chengjiAction"
+			method="chengjiMana1">
+			<result>/admin/chengji/chengjiMana1.jsp</result>
+		</action>
+		<action name="chengjiToEdit" class="chengjiAction"
+			method="chengjiToEdit">
+			<result>/admin/chengji/chengjiinfo.jsp</result>
+		</action>
+		<action name="chengjiEdit" class="chengjiAction"
+			method="chengjiEdit">
+		</action>
+        <action name="data_zhutu" class="chengjiAction" method="data_zhutu">
+            <result>/admin/chengji/xueya_zhutu.jsp</result>
+        </action>
+        <action name="data_zhutu_xuetang" class="chengjiAction" method="data_zhutu_xuetang">
+            <result>/admin/chengji/xueya_zhutu.jsp</result>
+        </action>
+        <action name="data_zhutu1" class="chengjiAction" method="data_zhutu1">
+            <result>/admin/chengji/xueya_zhutu.jsp</result>
+        </action>
+        <action name="data_zhutu_xuetang1" class="chengjiAction" method="data_zhutu_xuetang1">
+            <result>/admin/chengji/xueya_zhutu.jsp</result>
+        </action>
+		<action name="chengjiSearch" class="chengjiAction"
+			method="chengjiSearch">
+			<result>/admin/chengji/chengjiMana.jsp</result>
+		</action>
+		
+		
+
+		<action name="addFamily" class="familyAction"
+			method="addFamily">
+		</action>
+		<action name="deleteFamily" class="familyAction"
+			method="deleteFamily">
+		</action>
+		<action name="listFamily" class="familyAction"
+			method="listFamily">
+			<result>/admin/family/family_list.jsp</result>
+		</action>
+
+		<action name="familySearch" class="familyAction"
+			method="familySearch">
+			<result>/admin/family/family_list.jsp</result>
+		</action>
+		<action name="toEditFamily" class="familyAction"
+			method="toEditFamily">
+			<result>/admin/family/family_edit.jsp</result>
+		</action>
+		<action name="editFamily" class="familyAction"
+			method="editFamily">
+		</action>
+
+
+		<action name="addJiangli" class="jiangliAction" method="addJiangli">
+		</action>
+		<action name="addJiangli1" class="jiangliAction" method="addJiangli1">
+		</action>
+		<action name="deleteJiangli" class="jiangliAction"
+			method="deleteJiangli">
+		</action>
+		<action name="deleteJiangli1" class="jiangliAction"
+			method="deleteJiangli1">
+		</action>
+		
+		<action name="listJiangli" class="jiangliAction"
+			method="listJiangli">
+			<result>/admin/jiangli/jiangli_list.jsp</result>
+		</action>
+		<action name="listJiangli1" class="jiangliAction"
+			method="listJiangli1">
+			<result>/admin/jiangli/jiangli_list1.jsp</result>
+		</action>
+		<action name="jiangliSearch" class="jiangliAction"
+			method="jiangliSearch">
+			<result>/admin/jiangli/jiangli_list.jsp</result>
+		</action>
+		<action name="toEditJiangli" class="jiangliAction"
+			method="toEditJiangli">
+			<result>/admin/jiangli/jiangli_edit.jsp</result>
+		</action>
+		<action name="toEditJiangli1" class="jiangliAction"
+			method="toEditJiangli1">
+			<result>/admin/jiangli/jiangli_edit1.jsp</result>
+		</action>
+		<action name="editJiangli" class="jiangliAction"
+			method="editJiangli">
+		</action>
+		<action name="editJiangli1" class="jiangliAction"
+			method="editJiangli1">
+		</action>
+
+
+		<action name="gonggaoAdd" class="gonggaoAction" method="gonggaoAdd">
+		</action>
+		<action name="gonggaoDel" class="gonggaoAction" method="gonggaoDel">
+		</action>
+		<action name="gonggaoMana" class="gonggaoAction" method="gonggaoMana">
+			<result>/admin/gonggao/gonggaoMana.jsp</result>
+		</action>
+		<action name="gonggaoMana1" class="gonggaoAction" method="gonggaoMana1">
+			<result>/admin/gonggao/gonggaoMana1.jsp</result>
+		</action>
+		<action name="gonggaoDetail" class="gonggaoAction" method="gonggaoDetail">
+			<result>/admin/gonggao/gonggaoDetail.jsp</result>
+		</action>
+		<action name="gonggaoToUpdate" class="gonggaoAction" method="gonggaoToUpdate">
+			<result>/admin/gonggao/gonggaoupdate.jsp</result>
+		</action>
+		<action name="gonggaoEdit" class="gonggaoAction" method="gonggaoEdit">
+		</action>
+		
+		
+		<action name="gonggaoAdd1" class="gonggaoAction" method="gonggaoAdd1">
+		</action>
+		<action name="gonggaoDel1" class="gonggaoAction" method="gonggaoDel1">
+		</action>
+		<action name="gonggaoMana2" class="gonggaoAction" method="gonggaoMana2">
+			<result>/admin/gonggao1/gonggaoMana.jsp</result>
+		</action>
+		  <action name="gonggaoMana3" class="gonggaoAction" method="gonggaoMana3">
+			<result>/admin/gonggao1/gonggaoMana1.jsp</result>
+		</action>
+		<action name="gonggaoDetail1" class="gonggaoAction" method="gonggaoDetail1">
+			<result>/admin/gonggao1/gonggaoDetail.jsp</result>
+		</action>
+		<action name="gonggaoToUpdate1" class="gonggaoAction" method="gonggaoToUpdate1">
+			<result>/admin/gonggao1/gonggaoupdate.jsp</result>
+		</action>
+		<action name="gonggaoEdit1" class="gonggaoAction" method="gonggaoEdit1">
+		</action>
+		
+		<action name="gonggaoAdd2" class="gonggaoAction" method="gonggaoAdd2">
+		</action>
+		<action name="gonggaoDel2" class="gonggaoAction" method="gonggaoDel2">
+		</action>
+		<action name="gonggaoMana4" class="gonggaoAction" method="gonggaoMana4">
+			<result>/admin/gonggao2/gonggaoMana.jsp</result>
+		</action> 
+		 <action name="gonggaoMana5" class="gonggaoAction" method="gonggaoMana5">
+			<result>/admin/gonggao2/gonggaoMana1.jsp</result>
+		</action> 
+		<action name="gonggaoDetail2" class="gonggaoAction" method="gonggaoDetail2">
+			<result>/admin/gonggao2/gonggaoDetail.jsp</result>
+		</action>
+		<action name="gonggaoToUpdate2" class="gonggaoAction" method="gonggaoToUpdate2">
+			<result>/admin/gonggao2/gonggaoupdate.jsp</result>
+		</action>
+		<action name="gonggaoEdit2" class="gonggaoAction" method="gonggaoEdit2">
+		</action>
+		
+		
+		<action name="userReg" class="userAction" method="userReg">
+		</action>
+		<action name="userReg1" class="userAction" method="userReg1">
+		</action>
+		<action name="userDel" class="userAction" method="userDel">
+		</action>
+		<action name="userMana" class="userAction" method="userMana">
+			<result>/admin/user/userMana.jsp</result>
+		</action>
+		<action name="userAll" class="userAction" method="userAll">
+			<result>/admin/user/userAll.jsp</result>
+		</action>
+		<action name="Search" class="userAction" method="Search">
+			<result>/admin/user/userMana.jsp</result> 
+		</action>
+		<action name="SearchMana" class="userAction" method="SearchMana">
+			<result>/admin/user/userMana.jsp</result> 
+		</action>
+		<action name="userToEdit" class="userAction" method="userToEdit">
+			<result>/admin/user/userinfo1.jsp</result>
+		</action>
+		<action name="userEdit" class="userAction" method="userEdit">
+		</action>
+
+		<action name="adminAdd" class="adminAction" method="adminAdd">
+		</action>
+		<action name="adminDel" class="adminAction" method="adminDel">
+		</action>
+		<action name="adminManage" class="adminAction" method="adminManage">
+		<result>/admin/admin/adminManage.jsp</result>
+		</action>
+		<action name="adminMana3" class="adminAction" method="adminMana3">
+		<result>/admin/admin/adminManage.jsp</result>
+		</action>
+		<action name="adminToUpdate1" class="adminAction" method="adminToUpdate1">
+		<result>/admin/admin/adminupdate.jsp</result>
+		</action>
+		<action name="adminEdit1" class="adminAction" method="adminEdit1">
+		</action>
+	</package>
+</struts>

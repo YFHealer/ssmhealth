@@ -1,0 +1,148 @@
+/*
+ * Table
+ */
+table.gridTable {
+	clear: both;
+	width: 100%;
+}
+
+table.gridTable thead.gridHead th{
+	border-bottom: 1px solid black;
+	cursor: pointer;
+	*cursor: hand;
+	background: #EEE url("../images/table_head.png") 50% 50% repeat-x;
+}
+table.gridTable thead.gridHead th .headWrapper{
+	padding: 3px 13px 3px 13px;
+	font-weight: bold;
+	white-space: nowrap;
+	position: relative;;
+}
+
+table.gridTable thead.gridHead th span.asc,
+table.gridTable thead.gridHead th span.desc {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	margin-top: -8px;
+}
+
+table.gridTable thead.gridHead th span.asc{
+	background: url('../images/sort_asc.gif') no-repeat center right;
+}
+
+table.gridTable thead.gridHead th span.desc {
+	background: url('../images/sort_desc.gif') no-repeat center right;
+}
+
+table.gridTable tfoot th, table.gridTable tfoot td {
+	padding: 0px 18px 3px 10px;
+	/* border-top: 1px solid black; */
+	/* font-weight: bold; */
+}
+
+table.gridTable tbody td {
+	padding: 3px 1px;
+	text-align: center;
+}
+
+table.gridTable td,
+table.gridTable th {
+	vertical-align: middle;
+}
+
+table.gridTable tbody tr:hover {
+	background:#FCEFA1;
+}
+table.gridTable tr.even {
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(239,239,239,1) 100%); FF3.6+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(239,239,239,1))); Chrome,Safari4+
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); Chrome10+,Safari5.1+
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); Opera 11.10+
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); IE10+
+	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%); W3C
+	filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 )"; IE6-9
+}
+/*table.gridTable tr.odd { background-color: white; } */
+
+table.gridTable tr.odd td.sorting_1 { background-color: #D3D6FF; }
+table.gridTable tr.odd td.sorting_2 { background-color: #DADCFF; }
+table.gridTable tr.odd td.sorting_3 { background-color: #E0E2FF; }
+table.gridTable tr.even td.sorting_1 { background-color: #EAEBFF; }
+table.gridTable tr.even td.sorting_2 { background-color: #F2F3FF; }
+table.gridTable tr.even td.sorting_3 { background-color: #F9F9FF; }
+
+table.gridTable .fbutton{
+	float: right;
+}
+
+.is_button_group input {
+	margin : 0 10px;
+}
+
+.control-group {
+	padding-bottom: 5px;
+}
+
+.control-group td{
+	border: 0 none;
+	padding:1px 0;
+}
+.control-group .control-label,
+.control-group .control-item {
+	vertical-align: middle;
+	font-size:14px;
+	/* white-space: nowrap; */
+}
+
+.control-group .control-label {
+	width: 112px;
+	display: inline-block;
+	text-align:right;
+}
+
+.control-group .control-label label {
+	display: inline-block;
+	margin:0 2px;
+}
+
+.control-group .control-item {
+	padding: 0;
+}
+
+.nowrap {
+	 white-space: nowrap;
+}
+
+.control-group .control-item input[type="text"],
+.control-group .control-item input[type="password"],
+.control-group .control-item textarea,
+.control-group .control-item select{
+	width: 200px;
+}
+
+.control-group .control-item input[type="text"],
+.control-group .control-item input[type="password"]{
+	height: 18px;
+}
+
+/* .control-group .control-item select{
+	height: 22px;
+} */
+
+.control-group .control-item input[type="button"]{
+	height:24px;
+}
+
+.control-group .control-item textarea{
+	height: 60px;
+	resize: none;
+}
+
+.control-group .control-item .sub-group {
+	white-space: nowrap;
+	float: left;
+	padding-right: 10px;
+}
